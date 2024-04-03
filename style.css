@@ -21,8 +21,8 @@ body{
 .form{
     background-color: #ffffff;
     color: #212121;
-    width: 400px;
-    height: 350px;
+    width: 500px;
+    min-height: 450px;
     padding: 30px;
     border-radius: 8px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -81,7 +81,7 @@ background-color: #D2C5CC;
     /* border: 1px solid #EF9A9A; */
     /* display: none; */
 }
-.emailError{
+.emailError, .confirmPasswordError{
     /* margin-top: 5px;
     width: 345px;
     font-size: 16px; */

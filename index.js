@@ -4,8 +4,10 @@ form.addEventListener("submit", (event) => {
   event.preventDefault();
   let emailValue = document.querySelector(".email").value.trim();
   let passwordValue = document.querySelector(".password").value.trim();
+  let confirmpassword = document.querySelector('.confirmpassword').value.trim();
   let emailError = document.querySelector(".emailError");
   let passwordError = document.querySelector(".passwordError");
+  let confirmPasswordError = document.querySelector('.confirmPasswordError');
   let successMessage = document.querySelector(".successMessage");
   // ...............Reset the error................
   emailError.innerText = "";
@@ -15,7 +17,7 @@ form.addEventListener("submit", (event) => {
   if (
     emailValue.length < 3 ||
     emailValue.indexOf("@") === -1 ||
-    emailValue.indexOf(".") === -1
+    emailValue.indexOf(".") === -1 
   ) {
     console.log("enter in email");
     emailError.innerText =
@@ -27,7 +29,12 @@ form.addEventListener("submit", (event) => {
     console.log("enter in password");
     passwordError.innerText = "Password must be at least 8 characters long";
   }
-
+//  confirm password validation 
+if(passwordValue === confirmpassword ){
+  confirmPasswordError.innerText = "Confirm password required."
+} else {
+  alert("Password not same");
+}
   // If both email and password are valid
   if (
     emailValue.length >= 3 &&
