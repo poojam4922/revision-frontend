@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="form-container">
+        <form class="form">
+            <div class="form-wrapper">
+              <div class="form-field">
+                <label>Email</label>
+                <input type="text" name="email"  class="email" placeholder="Enter your email"/>
+                <span class="emailError" ></span>
+                <span class="emailSuccess"></span>
+              </div>
+              <div class="form-field">
+                <label>Password</label>
+                <input type="password" name="password" class="password" placeholder="Enter your password" />
+                <span class="passwordError" id="passwordError"></span>
+                <span class="passwordSuccess" id="emailError"></span>
+
+              </div>
+              <span class="successMessage"></span>
+              <button type="submit" class="btn">Submit</button>
+            </div>
+          </form>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
