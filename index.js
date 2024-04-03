@@ -4,10 +4,9 @@ form.addEventListener("submit", (event) => {
   event.preventDefault();
   let emailValue = document.querySelector(".email").value.trim();
   let passwordValue = document.querySelector(".password").value.trim();
-  let confirmpassword = document.querySelector('.confirmpassword').value.trim();
+  // let confirmpassword = document.querySelector('.confirmpassword').value.trim();
   let emailError = document.querySelector(".emailError");
   let passwordError = document.querySelector(".passwordError");
-  let confirmPasswordError = document.querySelector('.confirmPasswordError');
   let successMessage = document.querySelector(".successMessage");
   // ...............Reset the error................
   emailError.innerText = "";
@@ -29,12 +28,7 @@ form.addEventListener("submit", (event) => {
     console.log("enter in password");
     passwordError.innerText = "Password must be at least 8 characters long";
   }
-//  confirm password validation 
-if(passwordValue === confirmpassword ){
-  confirmPasswordError.innerText = "Confirm password required."
-} else {
-  alert("Password not same");
-}
+
   // If both email and password are valid
   if (
     emailValue.length >= 3 &&
@@ -58,3 +52,44 @@ if(passwordValue === confirmpassword ){
     }
   }
 });
+
+let registrationForm = document.querySelector('.registration-form');
+
+registrationForm.addEventListener('submit', handleRegistration);
+
+const handleRegistration =(e) =>{
+  e.preventDefault()
+  let emailValue = document.querySelector(".email").value.trim();
+  let passwordValue = document.querySelector(".password").value.trim();
+  let confirmpassword = document.querySelector('.confirmpassword').value.trim();
+  let emailError = document.querySelector(".emailError");
+  let passwordError = document.querySelector(".passwordError");
+  let confirmPasswordError = document.querySelector('.confirmPasswordError');
+  let successMessage = document.querySelector(".successMessage");
+    // Validate email
+    if (
+      emailValue.length < 3 ||
+      emailValue.indexOf("@") === -1 ||
+      emailValue.indexOf(".") === -1 
+    ) {
+      console.log("enter in email");
+      emailError.innerText =
+        "Make sure email is more than 3 characters and has @ and a .";
+    }
+  
+    // Validate password
+    if (passwordValue.length < 8) {
+      console.log("enter in password");
+      passwordError.innerText = "Password must be at least 8 characters long";
+    }
+//  confirm password validation 
+if(confirmpassword == " " || isNaN(confirmpassword) || confirmpassword <8) {
+  confirmPasswordError.innerText = "Confirm password required."
+}
+if(passwordValue === confirmpassword ){
+  confirmPasswordError.innerText = "Confirm password required."
+} else {
+  // alert("Password not same");
+  confirmPasswordError.innerText = "Password not same."
+}
+}

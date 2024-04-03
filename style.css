@@ -1,16 +1,16 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     /* background-color: #212121; */
     color: #fff;
     background-color: #E3A5A5;
 }
 
-.form-container{
+.form-container {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -18,7 +18,7 @@ body{
     align-items: center;
 }
 
-.form{
+.registration-form {
     background-color: #ffffff;
     color: #212121;
     width: 500px;
@@ -26,15 +26,34 @@ body{
     padding: 30px;
     border-radius: 8px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-background-color: #D2C5CC;
+    background-color: #D2C5CC;
 }
-.form h1{
+.registration-form h1 {
     font-size: 32px;
     font-weight: 600;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-bottom: 20px;
 }
-.form-wrapper{
+
+.form {
+    background-color: #ffffff;
+    color: #212121;
+    width: 500px;
+    min-height: 450px;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    background-color: #D2C5CC;
+}
+
+.form h1 {
+    font-size: 32px;
+    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 20px;
+}
+
+.form-wrapper {
 
     display: flex;
     flex-direction: column;
@@ -42,28 +61,33 @@ background-color: #D2C5CC;
     /* justify-content: start; */
     gap: 10px;
 }
-.form-field{
+
+.form-field {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 10px;
 }
-.form-field > label{
+
+.form-field>label {
     font-size: 18px;
     font-weight: 500;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-.form-field > input{
+
+.form-field>input {
     padding: 10px;
     border-radius: 5px;
     border: none;
     font-weight: 600;
 
 }
-.form-field > input:hover{
+
+.form-field>input:hover {
     border: 1px solid #E3A5A5;
 }
-.btn{
+
+.btn {
     /* width: 30%; */
     width: 100%;
     padding: 8px 20px;
@@ -72,10 +96,12 @@ background-color: #D2C5CC;
     background-color: #E3A5A5;
     font-weight: 600;
 }
-.btn:hover{
+
+.btn:hover {
     border: 1px solid #fff;
 }
-.passwordError{
+
+.passwordError {
     /* margin-top: 5px; */
     /* width: 345px;
     font-size: 16px; */
@@ -87,7 +113,11 @@ background-color: #D2C5CC;
     /* border: 1px solid #EF9A9A; */
     /* display: none; */
 }
-.emailError, .confirmPasswordError{
+.confirmPasswordError{
+    color: #c62828 !important;
+    background-color: green;
+}
+.emailError {
     /* margin-top: 5px;
     width: 345px;
     font-size: 16px; */
@@ -100,12 +130,15 @@ background-color: #D2C5CC;
     /* display: none; */
 
 }
-.accdiv{
+
+.accdiv {
     margin-top: 20px;
 }
-.accdiv .account{
+
+.accdiv .account {
     color: #212121;
 }
-.accdiv .account .signup{
+
+.accdiv .account .signup {
     color: blue
 }
