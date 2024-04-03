@@ -7,6 +7,7 @@
 body{
     /* background-color: #212121; */
     color: #fff;
+    background-color: #E3A5A5;
 }
 
 .form-container{
@@ -25,7 +26,7 @@ body{
     padding: 30px;
     border-radius: 8px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-
+background-color: #D2C5CC;
 }
 .form-wrapper{
 
@@ -50,19 +51,23 @@ body{
     padding: 10px;
     border-radius: 5px;
     border: none;
+    font-weight: 600;
+
 }
 .form-field > input:hover{
-    border: 1px solid black;
+    border: 1px solid #E3A5A5;
 }
 .btn{
     /* width: 30%; */
-    width: 30%;
-    padding: 6px 10px;
+    width: 100%;
+    padding: 8px 20px;
     border-radius: 5px;
     border: none;
+    background-color: #E3A5A5;
+    font-weight: 600;
 }
 .btn:hover{
-    border: 1px solid black;
+    border: 1px solid #fff;
 }
 .passwordError{
     /* margin-top: 5px; */
@@ -88,4 +93,13 @@ body{
     /* border: 1px solid #EF9A9A; */
     /* display: none; */
 
+}
+.accdiv{
+    margin-top: 20px;
+}
+.accdiv .account{
+    color: #212121;
+}
+.accdiv .account .signup{
+    color: blue
 }
